@@ -36,6 +36,8 @@ module.exports = {
 
 - `twigOptions`: optional; a map of options to be passed through to Twig.
   Example: `{autoescape: true}`
+- `twigLoaderCallback`: optional; a callback function that will be passed the Twig instance after it is initialized.
+  Example: `(twig) => {twig.extendFunction('myFunction', () => {return 'Hello World!';});}`
 
 ## Loading templates
 
